@@ -1,5 +1,5 @@
 # =========================
-#  Module: Vector DB Build
+#  Vector DB Build
 # =========================
 import box
 import yaml
@@ -28,6 +28,7 @@ def run_db_build():
 
     vectorstore = FAISS.from_documents(texts, embeddings)
     vectorstore.save_local(cfg.DB_FAISS_PATH)
+
 
 if __name__ == "__main__":
     run_db_build()
