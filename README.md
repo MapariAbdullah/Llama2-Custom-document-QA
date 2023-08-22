@@ -4,9 +4,7 @@
 
 - Third-party commercial large language model (LLM) providers like OpenAI's GPT have democratized LLM use via simple API calls.
 - However, there are instances where teams would require self-managed or private model deployment for reasons like data privacy and residency rules.
-- The proliferation of open-source LLMs has opened up a vast range of options for us, thus reducing our reliance on these third-party providers.
-- When we host open-source LLMs locally on-premise or in the cloud, the dedicated compute capacity becomes a key issue. While GPU instances may seem the obvious choice, the costs can easily skyrocket beyond budget.
-- In this project, we will discover how to run quantized versions of open-source LLMs on local CPU inference for document question-and-answer (Q&A).
+- In this project, we will discover how to run quantized versions of open-source LLM Llama2 by Meta on local CPU inference for document question-and-answer (Q&A).
   <br><br>
 
 ---
@@ -16,8 +14,8 @@
 - Ensure you have downloaded the GGML binary file from https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML and placed it into the `models/` folder
 - To start parsing user queries into the application, launch the terminal from the project directory and run the following command:
   `python main.py "<user query>"`
-- For example, `poetry run python main.py "What is meant by agile methodology?"`
-  (The PDF used for Querying is Software-Engineering-9th-Edition-by-Ian-Sommerville. You can change the dataset to any pdf file you want.)
+- For example, `python main.py "What is meant by agile methodology?"`
+- (The PDF used for Querying is Software-Engineering-9th-Edition-by-Ian-Sommerville. You can change the dataset to any pdf file you want.)
   <br><br>
   ![Alt text](assets/qa_answer.png)
 
@@ -27,7 +25,7 @@
 
 - `/assets`: Images relevant to the project
 - `/config`: Configuration files for LLM application
-- `/data`: Dataset used for this project (i.e., Manchester United FC 2022 Annual Report - 177-page PDF document)
+- `/data`: Dataset used for this project (i.e., Software-Engineering-9th-Edition-by-Ian-Sommerville - 790-page PDF document)
 - `/models`: Binary file of GGML quantized LLM model (i.e., Llama-2-7B-Chat)
 - `/src`: Python codes of key components of LLM application, namely `llm.py`, `utils.py`, and `prompts.py`
 - `/vectorstore`: FAISS vector store for documents
