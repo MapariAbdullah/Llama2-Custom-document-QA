@@ -4,7 +4,7 @@
 
 - Third-party commercial large language model (LLM) providers like OpenAI's GPT have democratized LLM use via simple API calls.
 - However, there are instances where teams would require self-managed or private model deployment for reasons like data privacy and residency rules.
-- In this project, we will discover how to run quantized version of open-source LLM Llama2 by Meta on local CPU inference for document question-and-answer (Q&A).
+- This project aims to run a quantized version of open-source LLM Llama2 by Meta on local CPU inference for document question-and-answer (Q&A).
   <br><br>
 
 ---
