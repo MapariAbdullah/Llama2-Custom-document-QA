@@ -4,22 +4,28 @@
 
 - Third-party commercial large language model (LLM) providers like OpenAI's GPT have democratized LLM use via simple API calls.
 - However, there are instances where teams would require self-managed or private model deployment for reasons like data privacy and residency rules.
-- In this project, we will discover how to run quantized versions of open-source LLM Llama2 by Meta on local CPU inference for document question-and-answer (Q&A).
+- In this project, we will discover how to run quantized version of open-source LLM Llama2 by Meta on local CPU inference for document question-and-answer (Q&A).
   <br><br>
 
 ---
 
 ## Quickstart
 
+- Make sure you have atleast 8gb of RAM in your system.
 - Ensure you have downloaded the GGML binary file from https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML and placed it into the `models/` folder
 - To start parsing user queries into the application, launch the terminal from the project directory and run the following command:
   `python main.py "<user query>"`
 - For example, `python main.py "What is meant by agile methodology?"`
 - (The PDF used for Querying is Software-Engineering-9th-Edition-by-Ian-Sommerville. You can change the dataset to any pdf file you want.)
   <br><br>
-  ![Alt text](assets/qa_answer.png)
 
 ---
+
+## Results
+
+- The model takes around 140s to retrieve the answer for `"What is meant by agile methodology?"` which is respectable considering it was done on an i5-6500 cpu(4c 4t).
+  <br><br>
+  ![Alt text](assets/qa_answer.png)
 
 ## Files and Content
 
