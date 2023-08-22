@@ -1,6 +1,7 @@
 # GGML Models
 models/*.bin
 
+
 # PPT decks
 *.pptx
 
@@ -18,6 +19,7 @@ build/
 develop-eggs/
 dist/
 downloads/
+llama/
 eggs/
 .eggs/
 lib/
