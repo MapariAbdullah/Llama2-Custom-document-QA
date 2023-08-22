@@ -28,4 +28,4 @@ if __name__ == "__main__":
 
     print(f'\nAnswer: {response["result"]}')
 
-    print(f"Time to retrieve response: {end - start}")
+    print(f"\nTime to retrieve response: {end - start}")
